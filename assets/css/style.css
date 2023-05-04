@@ -1,5 +1,6 @@
 body {
     margin: 30px;
+    font-size: 14px;
 }
 
 * {
@@ -11,13 +12,35 @@ body {
 
 /* FORMS */
 
+form {
+    padding:15px 0;
+    width: 100%;
+    max-width: 480px;
+}
+
 label,
 input,
 textarea,
+select,
 button {
+    width: 100%;
     display: block;
     clear: both;
 }
+
+label {
+    font-size: 1em;
+}
+
+input,
+textarea,
+select,
+button {
+    padding: 0 5px;
+    line-height: 30px;
+    margin: 5px 0 10px 0;
+}
+
 
 
 /* HEADER */
