@@ -18,7 +18,7 @@
         <section>
             
             <h2>User Sign Up form fields:</h2>
-            <form action="#">
+            <form onsubmit="return validateEmail()">
 
                 <label for="first-name">First Name</label>
                 <input type="text" name="first-name" id="first-name" placeholder="First Name">
@@ -26,8 +26,8 @@
                 <label for="last-name">Last Name</label>
                 <input type="text" name="last-name" id="last-name" placeholder="Last  Name">
                 
-                <label for="email-address">Email Address</label>
-                <input type="email" name="email-address" id="email-address" placeholder="Email Address">
+                <label for="email">Email Address</label>
+                <input type="email" name="email" id="email" placeholder="Email Address">
                 
                 <label for="password">Password</label>
                 <input type="password" name="password" id="password" placeholder="Password">
@@ -117,5 +117,18 @@
     <footer>
         Footer
     </footer>
+
+    <script>
+        function validateEmail() {
+          var email = document.getElementById("email").value;
+          var regex = /^\S+@\S+\.\S+$/; // email validation regular expression
+          if (!regex.test(email)) {
+            alert("Please enter a valid email address");
+            return false;
+          }
+          return true;
+        }
+        </script>
+
 </body>
 </html>
