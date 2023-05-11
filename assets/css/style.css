@@ -44,6 +44,14 @@ button {
     margin: 5px 0 10px 0;
 }
 
+.erp form label {
+    margin-top: 15px;
+}
+.erp form p {
+    font-size: 12px;
+    color: #999;
+}
+
 
 
 /* HEADER */
